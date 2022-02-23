@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    td{
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Online Form</h1>
+  <div class="online_Form">
+    <form>
+      <div>
+        <label>Full Name</label>
+        <input type="text" name="fullName" id="fullName">
+        
+        <input type="button" value="submit" onclick="manageData()" style="background-color:lightblue;">
+      </div>
+    </form>
+  </div>
+  <div id="message" style="padding-top: 10px; color:blue;" >
+
+  </div>
+  <div>
+    <h2>Online Form Details</h2>
+    <table style="border: 2px solid; border-color:blue; background-color: lightblue;" border="1">
+      <thead>
+        <tr>
+          <td>Sr. No.</td>
+          <td>Full Name</td>
+          <td>action</td>
+        </tr>
+      </thead>
+      <tbody id="root">
+
+      </tbody>
+    </table>
+  </div>
+  <script src="file.js"></script>
+</body>
+</html>
